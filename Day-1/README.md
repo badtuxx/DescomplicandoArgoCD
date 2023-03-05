@@ -23,8 +23,8 @@ Preencheu os pré-requisitos? Então vamos lá!
 - [Descomplicando ArgoCD - DAY-1](#descomplicando-argocd---day-1)
   - [O que vamos aprender no Day-1?](#o-que-vamos-aprender-no-day-1)
   - [Conteúdo do Day-1](#conteúdo-do-day-1)
-  - [ArgoCD](#argocd)
-  - [GitOps](#gitops)
+  - [O que é o ArgoCD?](#o-que-é-o-argocd)
+  - [O que é GitOps?](#o-que-é-gitops)
   - [Pré-requisitos](#pré-requisitos)
   - [Instalando o ArgoCD](#instalando-o-argocd)
     - [Instalando o ArgoCD como um operador no Kubernetes](#instalando-o-argocd-como-um-operador-no-kubernetes)
@@ -38,7 +38,7 @@ Preencheu os pré-requisitos? Então vamos lá!
 
 &nbsp;
 
-## ArgoCD
+## O que é o ArgoCD?
 
 O ArgoCD é uma poderoso ferramenta quando você pensa em GitOps ou Continous Delivery. O ArgoCD é um projeto open source, criado pela [Argo](https://argoproj.github.io/argo/), que tem como objetivo facilitar a implantação e gerenciamento de aplicações em Kubernetes.
 
@@ -61,7 +61,7 @@ Está preparado para mais essa viajem com o objetivo de descomplicar mais um ass
 #VAIIII
 
 
-## GitOps
+## O que é GitOps?
 
 Esse livro não tem como objetivo descomplicar o GitOps. Nesse livro o nosso objetivo é descomplicar uma das etapas fundamentais do GitOps, que é a utilização do ArgoCD para gerenciar as entregas contínuas no Kubernetes.
 
