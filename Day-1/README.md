@@ -19,10 +19,10 @@ Preencheu os pré-requisitos? Então vamos lá!
 &nbsp;
 
 
-## Conteúdo do repositório
+## Conteúdo do Day-1
 - [Descomplicando ArgoCD - DAY-1](#descomplicando-argocd---day-1)
   - [O que vamos aprender no Day-1?](#o-que-vamos-aprender-no-day-1)
-  - [Conteúdo do repositório](#conteúdo-do-repositório)
+  - [Conteúdo do Day-1](#conteúdo-do-day-1)
   - [ArgoCD](#argocd)
   - [GitOps](#gitops)
   - [Pré-requisitos](#pré-requisitos)

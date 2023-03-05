@@ -11,6 +11,7 @@ Esse repositório faz parte do projeto [Certified Containers Expert](https://git
 
 ## Conteúdo do repositório
 - [Descomplicando ArgoCD - WIP](d#descomplicando-argocd---wip)
+- [Day-1](Day-1/README.md#conteúdo-do-day-1)
   - [O que vamos aprender no Day-1?](Day-1/README.md#o-que-vamos-aprender-no-day-1)
   - [ArgoCD](Day-1/README.md#argocd)
   - [GitOps](Day-1/README.md#gitops)
