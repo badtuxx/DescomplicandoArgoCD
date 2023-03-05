@@ -10,15 +10,14 @@ Esse repositório faz parte do projeto [Certified Containers Expert](https://git
 
 
 ## Conteúdo do repositório
-- [Descomplicando ArgoCD - WIP](Day-1/README.md#descomplicando-argocd---wip)
-  - [Descrição](Day-1/README.md#descrição)
-  - [Conteúdo do repositório](Day-1/README.md#conteúdo-do-repositório)
+- [Descomplicando ArgoCD - WIP](d#descomplicando-argocd---wip)
+  - [O que vamos aprender no Day-1?](Day-1/README.md#o-que-vamos-aprender-no-day-1)
   - [ArgoCD](Day-1/README.md#argocd)
   - [GitOps](Day-1/README.md#gitops)
   - [Pré-requisitos](Day-1/README.md#pré-requisitos)
   - [Instalando o ArgoCD](Day-1/README.md#instalando-o-argocd)
     - [Instalando o ArgoCD como um operador no Kubernetes](Day-1/README.md#instalando-o-argocd-como-um-operador-no-kubernetes)
-  - [Instalando o ArgoCD CLI](Day-1/README.md#instalando-o-argocd-cli)
+    - [Instalando o ArgoCD CLI](Day-1/README.md#instalando-o-argocd-cli)
   - [Autenticando no ArgoCD](Day-1/README.md#autenticando-no-argocd)
   - [Criando a aplicação no ArgoCD](Day-1/README.md#criando-a-aplicação-no-argocd)
     - [Criando a nossa app exemplo](Day-1/README.md#criando-a-nossa-app-exemplo)
