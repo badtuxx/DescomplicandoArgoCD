@@ -515,6 +515,55 @@ Cluster 'https://F40E37CE91565CC520A53CB1B191CCCA.gr7.us-east-1.eks.amazonaws.co
 
 &nbsp;
 
+Caso esteja utilizando um cluster k8s no mesmo host em que está executando o kubectl, como é o que acontece quando usamos um cluster via kind ou minikube por exemplo, você pode ter o seguinte erro:
+
+```bash
+WARNING: This will create a service account `argocd-manager` on the cluster referenced by context `kind-kind` with full cluster level privileges. Do you want to continue [y/N]? y
+INFO[0020] ServiceAccount "argocd-manager" created in namespace "kube-system" 
+INFO[0020] ClusterRole "argocd-manager-role" created    
+INFO[0020] ClusterRoleBinding "argocd-manager-role-binding" created 
+INFO[0025] Created bearer token secret for ServiceAccount "argocd-manager" 
+FATA[0025] rpc error: code = Unknown desc = Get "https://127.0.0.1:32919/version?timeout=32s": dial tcp 127.0.0.1:32919: connect: connection refused
+```
+
+Para contornar esse erro execute o comando `kubectl get -n default endpoints`. A saída será algo parecido com isso:
+
+```bash
+NAME         ENDPOINTS         AGE
+kubernetes   172.18.0.2:6443   103m
+```
+
+Agora copie o ip e porta que foi mostrado com a execução do comando anterior e altere somente o valor de endereço do server no seu arquivo `.kube/config`, como no exemplo abaixo onde o ip antigo foi comentado e o novo endereço foi configurado:
+
+```yaml
+apiVersion: v1
+clusters:
+- cluster:
+    #server: https://127.0.0.1:32919
+    server: https://172.18.0.2:6443
+  name: kind-kind
+
+```
+
+
+Após essa modificação execute novamente o comando para adicionar o cluster ao ArgoCD
+
+```bash
+argocd cluster add O_NOME_DO_SEU_CONTEXT
+```
+
+E desta vez a saída sem erro será parecida com isso:
+
+```bash
+WARNING: This will create a service account `argocd-manager` on the cluster referenced by context `kind-kind` with full cluster level privileges. Do you want to continue [y/N]? y
+INFO[0001] ServiceAccount "argocd-manager" already exists in namespace "kube-system" 
+INFO[0001] ClusterRole "argocd-manager-role" updated    
+INFO[0001] ClusterRoleBinding "argocd-manager-role-binding" updated 
+Cluster 'https://172.18.0.2:6443' added
+```
+
+&nbsp;
+
 Pronto, nosso cluster foi adicionado ao ArgoCD.
 
 Vamos confirmar se o nosso cluster foi adicionado ao ArgoCD:
