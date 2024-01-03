@@ -40,7 +40,7 @@ Preencheu os pré-requisitos? Então vamos lá!
 
 ## O que é o ArgoCD?
 
-O ArgoCD é uma poderoso ferramenta quando você pensa em GitOps ou Continous Delivery. O ArgoCD é um projeto open source, criado pela [Argo](https://argoproj.github.io/argo/), que tem como objetivo facilitar a implantação e gerenciamento de aplicações em Kubernetes.
+O ArgoCD é uma poderosa ferramenta quando você pensa em GitOps ou Continous Delivery. O ArgoCD é um projeto open source, criado pela [Argo](https://argoproj.github.io/argo/), que tem como objetivo facilitar a implantação e gerenciamento de aplicações em Kubernetes.
 
 O ArgoCD foi escrito em Go e utiliza o [Kubernetes Operator Pattern](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) para gerenciar os recursos do Kubernetes.
 
@@ -52,7 +52,7 @@ Talvez esse seja somente o seu primeiro passo para o mundo do GitOps e do Contin
 
 Você e sua equipe terá que se adaptar e criar maturidade para trabalhar com entregas contínuas, pois entregar é a tarefa mais fácil, o difícil é entregar com qualidade e com segurança de que não vai quebrar nada, que foi testado e que não vai afetar o negócio.
 
-Um forte característica do ArgoCD é a sua separação de responsabilidades quando estamos falando de CI/CD. Ele não se preocupa em ser um solução completa para a sua esteira de CI/CD, ele se preocupa em ser uma ferramenta que vai gerenciar as entregas contínuas no Kubernetes, ele se preocupa com a parte CD, e não com a parte CI.
+Uma forte característica do ArgoCD é a sua separação de responsabilidades quando estamos falando de CI/CD. Ele não se preocupa em ser um solução completa para a sua esteira de CI/CD, ele se preocupa em ser uma ferramenta que vai gerenciar as entregas contínuas no Kubernetes, ele se preocupa com a parte CD, e não com a parte CI.
 
 Acho que essa é uma boa apresentação do ArgoCD, e nem vou vou precisar falar que ele é peça fundamental nas melhores engenharías de software do mundo.
 
